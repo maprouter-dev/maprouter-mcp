@@ -1,0 +1,41 @@
+name: Report a problem
+description: Something in MapRouter isn't working as it should.
+labels: [bug, triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please don't paste API keys (mr_sk_… or mr_pk_…) here; this page is public.
+        For billing or account questions, email support@maprouter.dev instead.
+  - type: dropdown
+    id: area
+    attributes:
+      label: What were you using?
+      options:
+        - Maps and tiles
+        - Address search (geocode, autocomplete, reverse)
+        - Time zones
+        - Claude connector or plugin (MCP)
+        - Dashboard, sign-in or credits
+        - Website or docs
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what you got instead.
+    validations:
+      required: true
+  - type: input
+    id: request
+    attributes:
+      label: Request ID
+      description: From the error response (`request_id`) or the `x-request-id` header, if you have one.
+      placeholder: 8f3a1c2b9d4e5f60-YYZ
+  - type: input
+    id: when
+    attributes:
+      label: When did it happen?
+      description: Roughly, with time zone.

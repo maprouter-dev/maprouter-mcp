@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Billing, account or private question
+    url: mailto:support@maprouter.dev
+    about: Email support@maprouter.dev for anything involving your account or payments.
+  - name: Docs
+    url: https://maprouter.dev/docs/
+    about: Quickstart, API reference and error codes.

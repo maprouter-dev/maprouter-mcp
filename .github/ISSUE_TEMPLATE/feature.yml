@@ -1,0 +1,16 @@
+name: Request a feature
+description: Something you'd like MapRouter to do.
+labels: [feature, triage]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What are you trying to build?
+      description: The app or task, and where MapRouter falls short today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+      description: The feature, endpoint or style you have in mind.
